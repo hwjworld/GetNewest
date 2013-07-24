@@ -1,0 +1,1058 @@
+2009-09-12 22:34:02,116 ERROR [main] (com.founder.enp.config.Init:43) - 载入配置有误，将退出程序。完善配置后再启动。
+org.dom4j.DocumentException: F:\work\workspace\GetNewest\config.xml (系统找不到指定的文件。) Nested exception: F:\work\workspace\GetNewest\config.xml (系统找不到指定的文件。)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:484)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:321)
+	at com.founder.enp.config.Init.readParams(Init.java:52)
+	at com.founder.enp.config.Init.init(Init.java:40)
+	at com.founder.enp.DataMoveMain.main(DataMoveMain.java:18)
+Nested exception: 
+java.io.FileNotFoundException: F:\work\workspace\GetNewest\config.xml (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.io.FileInputStream.<init>(FileInputStream.java:66)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:70)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:161)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:973)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:184)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:798)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:321)
+	at com.founder.enp.config.Init.readParams(Init.java:52)
+	at com.founder.enp.config.Init.init(Init.java:40)
+	at com.founder.enp.DataMoveMain.main(DataMoveMain.java:18)
+2009-09-12 22:37:12,258  INFO [main] (com.founder.enp.config.Init:53) - configFile : config.xml
+2009-09-12 22:38:26,962  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-13 18:55:22,080  INFO [main] (com.founder.enp.config.Init:53) - configFile : config.xml
+2009-09-13 18:55:22,104 ERROR [main] (com.founder.enp.config.Init:43) - 载入配置有误，将退出程序。完善配置后再启动。
+java.lang.NullPointerException
+	at com.founder.enp.config.Init.readParams(Init.java:56)
+	at com.founder.enp.config.Init.init(Init.java:40)
+	at com.founder.enp.DataMoveMain.main(DataMoveMain.java:21)
+2009-09-13 18:56:09,133  INFO [main] (com.founder.enp.config.Init:51) - configFile : config.xml
+2009-09-13 18:57:04,539  INFO [main] (com.founder.enp.config.Init:51) - configFile : config.xml
+2009-09-13 18:57:26,208  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 18:57:30,445  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 18:58:26,595  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=1
+2009-09-13 18:58:26,625 ERROR [Timer-0] (com.founder.enp.db.ConnectionManager:29) - 取得数据库连接异常
+java.lang.NullPointerException
+	at com.founder.enp.db.DBConnectionPool.getConnection(DBConnectionPool.java:120)
+	at com.founder.enp.db.ConnectionManager.getConnection(ConnectionManager.java:27)
+	at com.founder.enp.util.DBUtil.getConnection(DBUtil.java:53)
+	at com.founder.enp.source.SourceDB.getConnection(SourceDB.java:48)
+	at com.founder.enp.source.SourceDB.getData(SourceDB.java:32)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:41)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:00:27,153  INFO [main] (com.founder.enp.config.Init:51) - configFile : config.xml
+2009-09-13 19:00:33,618  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:00:38,035  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:01:03,034  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=1
+2009-09-13 19:07:28,726  INFO [main] (com.founder.enp.config.Init:51) - configFile : config.xml
+2009-09-13 19:07:28,741  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:07:33,029  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:07:38,257  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=1
+2009-09-13 19:07:38,295 ERROR [Timer-0] (com.founder.enp.db.ConnectionManager:29) - 取得数据库连接异常
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:415)
+	at java.lang.Integer.parseInt(Integer.java:497)
+	at com.founder.enp.db.DBConnectionPool.initDataSource(DBConnectionPool.java:87)
+	at com.founder.enp.db.DBConnectionPool.startPool(DBConnectionPool.java:60)
+	at com.founder.enp.db.DBConnectionPool.getConnection(DBConnectionPool.java:121)
+	at com.founder.enp.db.ConnectionManager.getConnection(ConnectionManager.java:27)
+	at com.founder.enp.util.DBUtil.getConnection(DBUtil.java:53)
+	at com.founder.enp.source.SourceDB.getConnection(SourceDB.java:48)
+	at com.founder.enp.source.SourceDB.getData(SourceDB.java:32)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:41)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:14:11,345  INFO [main] (com.founder.enp.config.Init:51) - configFile : config.xml
+2009-09-13 19:14:11,357  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:14:13,897  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:14:20,661  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=1
+2009-09-13 19:14:20,755 ERROR [Timer-0] (com.founder.enp.db.ConnectionManager:29) - 取得数据库连接异常
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:415)
+	at java.lang.Integer.parseInt(Integer.java:497)
+	at com.founder.enp.db.DBConnectionPool.initDataSource(DBConnectionPool.java:87)
+	at com.founder.enp.db.DBConnectionPool.startPool(DBConnectionPool.java:60)
+	at com.founder.enp.db.DBConnectionPool.getConnection(DBConnectionPool.java:121)
+	at com.founder.enp.db.ConnectionManager.getConnection(ConnectionManager.java:27)
+	at com.founder.enp.util.DBUtil.getConnection(DBUtil.java:53)
+	at com.founder.enp.source.SourceDB.getConnection(SourceDB.java:48)
+	at com.founder.enp.source.SourceDB.getData(SourceDB.java:32)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:41)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:25:28,003  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 19:25:28,020  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:25:33,626  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:25:41,390  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=1
+2009-09-13 19:25:41,433  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：1
+2009-09-13 19:26:03,017 ERROR [Timer-0] (com.founder.enp.db.ConnectionManager:29) - 取得数据库连接异常
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Network error IOException: Connection timed out: connect)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at com.founder.enp.db.DBConnectionPool.getConnection(DBConnectionPool.java:123)
+	at com.founder.enp.db.ConnectionManager.getConnection(ConnectionManager.java:27)
+	at com.founder.enp.util.DBUtil.getConnection(DBUtil.java:41)
+	at com.founder.enp.source.SourceDB.getConnection(SourceDB.java:48)
+	at com.founder.enp.source.SourceDB.getData(SourceDB.java:32)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:41)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+Caused by: java.sql.SQLException: Network error IOException: Connection timed out: connect
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.<init>(ConnectionJDBC2.java:385)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC3.<init>(ConnectionJDBC3.java:50)
+	at net.sourceforge.jtds.jdbc.Driver.connect(Driver.java:182)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 10 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:520)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at net.sourceforge.jtds.jdbc.SharedSocket.createSocketForJDBC3(SharedSocket.java:304)
+	at net.sourceforge.jtds.jdbc.SharedSocket.<init>(SharedSocket.java:255)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.<init>(ConnectionJDBC2.java:310)
+	... 16 more
+2009-09-13 19:26:39,923 ERROR [Timer-0] (com.founder.enp.proess.ChunkProcess:43) - 从源取得数据错误,数据:【null】
+2009-09-13 19:26:45,907  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【70】秒
+2009-09-13 19:27:00,270  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:27:04,089  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=1
+2009-09-13 19:27:04,090  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：1
+2009-09-13 19:35:15,412  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 19:37:09,781  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 19:37:19,692  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:37:21,816  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:37:24,413  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 19:37:24,450  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 19:37:45,835 ERROR [Timer-0] (com.founder.enp.db.ConnectionManager:29) - 取得数据库连接异常
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at com.founder.enp.db.DBConnectionPool.getConnection(DBConnectionPool.java:123)
+	at com.founder.enp.db.ConnectionManager.getConnection(ConnectionManager.java:27)
+	at com.founder.enp.util.DBUtil.getConnection(DBUtil.java:41)
+	at com.founder.enp.source.SourceDB.getConnection(SourceDB.java:48)
+	at com.founder.enp.source.SourceDB.getData(SourceDB.java:32)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:41)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 10 more
+2009-09-13 19:38:31,302  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 19:38:35,363  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:38:37,521  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:38:37,587  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 19:38:37,635  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 19:39:34,485  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 19:39:42,877  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 19:40:24,612  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:58) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 19:42:27,937 ERROR [Timer-0] (com.founder.enp.util.DBUtil:76) - 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:546)
+	at java.util.ArrayList.get(ArrayList.java:321)
+	at com.founder.enp.util.DBUtil.getFirstObjStringFromList(DBUtil.java:73)
+	at com.founder.enp.util.DBUtil.getLongFromDatabase(DBUtil.java:124)
+	at com.founder.enp.util.ColumnUtil.getNodeID(ColumnUtil.java:172)
+	at com.founder.enp.util.ColumnUtil.syncTypeStruct(ColumnUtil.java:244)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:60)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:42:28,002 ERROR [Timer-0] (com.founder.enp.util.DBUtil:76) - 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:546)
+	at java.util.ArrayList.get(ArrayList.java:321)
+	at com.founder.enp.util.DBUtil.getFirstObjStringFromList(DBUtil.java:73)
+	at com.founder.enp.util.DBUtil.getLongFromDatabase(DBUtil.java:124)
+	at com.founder.enp.util.ColumnUtil.getNodeID(ColumnUtil.java:172)
+	at com.founder.enp.util.ColumnUtil.syncTypeStruct(ColumnUtil.java:244)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:60)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:42:28,043 ERROR [Timer-0] (com.founder.enp.util.DBUtil:76) - 
+java.lang.NullPointerException
+	at com.founder.enp.util.DBUtil.getFirstObjStringFromList(DBUtil.java:74)
+	at com.founder.enp.util.DBUtil.getDoubleFromDatabase(DBUtil.java:104)
+	at com.founder.enp.util.ColumnUtil.createNode(ColumnUtil.java:80)
+	at com.founder.enp.util.ColumnUtil.syncTypeStruct(ColumnUtil.java:246)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:60)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:43:40,902 ERROR [Timer-0] (com.founder.enp.util.DBUtil:76) - 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:546)
+	at java.util.ArrayList.get(ArrayList.java:321)
+	at com.founder.enp.util.DBUtil.getFirstObjStringFromList(DBUtil.java:73)
+	at com.founder.enp.util.DBUtil.getIntFromDatabase(DBUtil.java:93)
+	at com.founder.enp.util.ArticleUtil.isNewArticle(ArticleUtil.java:218)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:75)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:45:25,926 ERROR [Timer-0] (com.founder.enp.util.ArticleUtil:53) - 
+java.sql.SQLException: Connection is closed. Query: insert into releaselib (articleid, title, abstract, createtime,  masterid, attr, importid,publishstate ,pubtime) values(?,?,?,sysdate,?,?,?,?,?) Parameters: [0, null, null, 147, 63, 1, 0, null]
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:597)
+	at com.founder.enp.util.DBUtil.executeSql(DBUtil.java:167)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:44)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:79)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:45:34,332 ERROR [Timer-0] (com.founder.enp.dest.DestCMS4:83) - 
+java.sql.SQLException: Connection is closed.
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:175)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.rollback(PoolingDataSource.java:311)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:55)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:79)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 19:45:55,499  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【437】秒
+2009-09-13 19:58:22,780  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 19:58:22,798  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 19:58:28,336  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 19:58:28,375  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 19:58:28,397  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 19:58:29,064  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 19:58:29,067  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 19:58:29,114  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:60) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 19:58:46,639 ERROR [Timer-0] (com.founder.enp.util.DBUtil:79) - 
+java.lang.NullPointerException
+	at com.founder.enp.util.DBUtil.getFirstObjStringFromList(DBUtil.java:77)
+	at com.founder.enp.util.DBUtil.getDoubleFromDatabase(DBUtil.java:107)
+	at com.founder.enp.util.ColumnUtil.createNode(ColumnUtil.java:80)
+	at com.founder.enp.util.ColumnUtil.syncTypeStruct(ColumnUtil.java:246)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:62)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:47)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 21:37:48,590  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 21:37:48,647  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 21:37:52,703  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 21:37:52,808  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 21:37:52,878  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 21:37:54,009  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 21:37:54,013  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 21:39:05,465 ERROR [Timer-0] (com.founder.enp.util.ArticleUtil:48) - 
+java.sql.SQLException: 无效的列类型 Query: insert into releaselib  (articleid, title, abstract, createtime,  masterid, attr, importid,publishstate ,pubtime)  values(?,?,?,sysdate,?,?,?,?,?) Parameters: [1274, 1, 119;健康;2;117, 149, 63, 1, 1, {SysUpTime = 145005 days 16:24:34} {Timestamp = Sun Sep 13 21:38:27 CST 2009}]
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:597)
+	at com.founder.enp.util.DBUtil.executeSql(DBUtil.java:173)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:40)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:82)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 21:46:04,059  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 21:46:04,084  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 21:46:14,942  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 21:46:15,022  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 21:46:15,059  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 21:46:15,753  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 21:46:15,756  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 21:46:56,996 ERROR [Timer-0] (com.founder.enp.util.ArticleUtil:48) - 
+java.sql.SQLException: ORA-00001: 违反唯一约束条件 (CMSUSER.PK_RELEASELIB)
+ Query: insert into releaselib  (articleid, title, abstract, createtime,  masterid, attr, importid,publishstate ,pubtime)  values(?,?,?,sysdate,?,?,?,?,sysdate) Parameters: [1276, 1, 119;健康;2;117, 149, 63, 1, 1]
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:597)
+	at com.founder.enp.util.DBUtil.executeSql(DBUtil.java:173)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:40)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:82)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 21:57:11,185 ERROR [main] (com.founder.enp.config.Init:41) - 载入配置有误，将退出程序。完善配置后再启动。
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key configHome
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:325)
+	at java.util.ResourceBundle.getString(ResourceBundle.java:285)
+	at com.founder.enp.config.ConfigManager.loadProperties(ConfigManager.java:24)
+	at com.founder.enp.config.ConfigManager.getConfigFilePath(ConfigManager.java:19)
+	at com.founder.enp.config.Init.readParams(Init.java:51)
+	at com.founder.enp.config.Init.init(Init.java:38)
+	at com.founder.enp.DataMoveMain.main(DataMoveMain.java:32)
+2009-09-13 22:01:30,854  INFO [main] (com.founder.enp.config.Init:52) - configFile : config.xml
+2009-09-13 22:01:41,721  INFO [main] (com.founder.enp.config.Init:53) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:02:02,832  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:03:19,824  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:03:19,855  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:03:29,139  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:03:29,184  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:03:29,217  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:03:29,908  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:03:29,909  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:06:20,555  INFO [main] (com.founder.enp.DataMoveMain:60) - 已发送结束程序消息
+2009-09-13 22:09:41,196  INFO [main] (com.founder.enp.DataMoveMain:61) - 已发送结束程序消息
+2009-09-13 22:10:03,953  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:10:03,989  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:10:04,856  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:10:04,884  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:10:04,910  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:10:05,581  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:10:05,583  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:10:10,289  INFO [main] (com.founder.enp.DataMoveMain:80) - 检测到停止程序消息
+2009-09-13 22:11:55,386  INFO [main] (com.founder.enp.DataMoveMain:107) - 程序安全关闭
+2009-09-13 22:13:13,679 ERROR [Timer-0] (com.founder.enp.util.DBUtil:101) - Error SQL: select articleid from releaselib where importid=2 and importid<>'0' and masterid=149 order by importid asc
+2009-09-13 22:13:13,684 ERROR [Timer-0] (com.founder.enp.util.DBUtil:102) - 
+java.sql.SQLException: Connection is closed. Query: select articleid from releaselib where importid=2 and importid<>'0' and masterid=149 order by importid asc Parameters: []
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:397)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:423)
+	at com.founder.enp.util.DBUtil.getQueryList(DBUtil.java:66)
+	at com.founder.enp.util.DBUtil.getIntFromDatabase(DBUtil.java:99)
+	at com.founder.enp.util.ArticleUtil.isNewArticle(ArticleUtil.java:211)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:72)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 22:13:16,875 ERROR [Timer-0] (com.founder.enp.util.DBUtil:132) - Error SQL: select SEQ_RELEASELIB.nextVal from dual
+2009-09-13 22:13:16,879 ERROR [Timer-0] (com.founder.enp.util.DBUtil:133) - 
+java.sql.SQLException: Connection is closed. Query: select SEQ_RELEASELIB.nextVal from dual Parameters: []
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:397)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:423)
+	at com.founder.enp.util.DBUtil.getQueryList(DBUtil.java:66)
+	at com.founder.enp.util.DBUtil.getLongFromDatabase(DBUtil.java:130)
+	at com.founder.enp.util.ArticleUtil.generateArticleId(ArticleUtil.java:145)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:77)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 22:13:22,327 ERROR [Timer-0] (com.founder.enp.util.ArticleUtil:48) - 
+java.sql.SQLException: Connection is closed. Query: insert into releaselib  (articleid, title, abstract, createtime,  masterid, attr, importid,publishstate ,pubtime)  values(?,?,?,sysdate,?,?,?,?,sysdate) Parameters: [0, 2, 148;test1;2;0, 149, 63, 2, 1]
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:597)
+	at com.founder.enp.util.DBUtil.executeSql(DBUtil.java:173)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:40)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:82)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 22:13:24,240 ERROR [Timer-0] (com.founder.enp.dest.DestCMS4:86) - 
+java.sql.SQLException: Connection is closed.
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:175)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.rollback(PoolingDataSource.java:311)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:50)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:82)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 22:13:43,163  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【216】秒
+2009-09-13 22:23:53,855  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:23:53,880  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:30:07,711  INFO [main] (com.founder.enp.DataMoveMain:102) - 检测到停止程序消息
+2009-09-13 22:31:13,319  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:31:13,330  INFO [main] (com.founder.enp.DataMoveMain:131) - 程序安全关闭
+2009-09-13 22:31:18,339  INFO [main] (com.founder.enp.DataMoveMain:39) - 程序安全关闭
+2009-09-13 22:31:54,073  INFO [main] (com.founder.enp.DataMoveMain:102) - 检测到停止程序消息
+2009-09-13 22:32:00,963  INFO [main] (com.founder.enp.DataMoveMain:130) - 程序安全关闭
+2009-09-13 22:32:46,009  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:32:46,014  INFO [main] (com.founder.enp.DataMoveMain:131) - 程序安全关闭
+2009-09-13 22:33:05,903  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:33:05,920  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:33:05,921  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:33:05,937  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:33:05,955  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:33:06,600  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:33:06,607  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:33:30,923  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:34:15,285  INFO [main] (com.founder.enp.DataMoveMain:131) - 程序安全关闭
+2009-09-13 22:35:59,678  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:35:59,716  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:35:59,717  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:35:59,734  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:35:59,749  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:36:00,386  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:36:00,388  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:36:14,717  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:39:19,214  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:39:19,223  INFO [main] (com.founder.enp.DataMoveMain:131) - 程序安全关闭
+2009-09-13 22:40:25,567  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:40:25,619  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:40:25,620  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:40:25,655  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:40:25,685  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:40:26,395  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:40:26,398  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:40:45,621  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:40:45,622  INFO [main] (com.founder.enp.DataMoveMain:131) - 程序安全关闭
+2009-09-13 22:41:19,110  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:41:19,131  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:41:19,133  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:41:19,155  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:41:19,176  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:41:19,883  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:41:19,887  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:42:54,531  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:43:44,064  INFO [main] (com.founder.enp.DataMoveMain:131) - 程序安全关闭
+2009-09-13 22:44:03,487  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:44:03,510  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:44:03,512  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:44:03,542  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:44:03,570  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:44:04,256  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:44:04,260  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:44:18,512  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:45:15,305 ERROR [Timer-0] (com.founder.enp.util.ArticleUtil:48) - 
+java.sql.SQLException: 无效的列类型 Query: insert into pagelayout(nodeid,articleid,displayorder,attr,pubtime,publishstate,title,masterid)values(?,?,?,?,?,?,?,?) Parameters: [149, 1277, 3.2580224400004998E7, 63, {SysUpTime = 145006 days 3:28:41} {Timestamp = Sun Sep 13 22:44:52 CST 2009}, 1, 1, 149]
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:597)
+	at com.founder.enp.util.DBUtil.executeSql(DBUtil.java:173)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:45)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:82)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 22:49:12,543  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:50:42,526  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:50:52,353  INFO [main] (com.founder.enp.DataMoveMain:133) - 程序安全关闭
+2009-09-13 22:51:01,913  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:51:01,931  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:51:01,934  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:51:01,986  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:51:02,005  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:51:22,530  INFO [Timer-0] (com.founder.enp.util.ArticleUtil:46) - 新取到了稿件【-1】排行数:【1】所在栏目【149】
+2009-09-13 22:52:19,438 ERROR [Timer-0] (com.founder.enp.util.ArticleUtil:48) - 
+java.sql.SQLException: ORA-00001: 违反唯一约束条件 (CMSUSER.PK_RELEASELIB)
+ Query: insert into releaselib  (articleid, title, abstract, createtime,  masterid, attr, importid,publishstate ,pubtime)  values(?,?,?,sysdate,?,?,?,?,sysdate) Parameters: [1278, 1, 119;健康;2;117, 149, 63, 1, 1]
+	at org.apache.commons.dbutils.QueryRunner.rethrow(QueryRunner.java:540)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:597)
+	at com.founder.enp.util.DBUtil.executeSql(DBUtil.java:173)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:40)
+	at com.founder.enp.util.ArticleUtil.insertReleaseLib(ArticleUtil.java:52)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:82)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 22:52:52,162  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 22:52:52,185  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 22:52:52,190  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 22:52:52,217  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 22:52:52,244  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 22:53:13,835  INFO [Timer-0] (com.founder.enp.util.ArticleUtil:45) - 新取到了稿件【1279】排行数:【1】所在栏目【149】
+2009-09-13 22:53:21,990  INFO [Timer-0] (com.founder.enp.util.ArticleUtil:45) - 新取到了稿件【1280】排行数:【2】所在栏目【149】
+2009-09-13 22:53:23,610  INFO [Timer-0] (com.founder.enp.util.ArticleUtil:45) - 新取到了稿件【1281】排行数:【3】所在栏目【149】
+2009-09-13 22:53:23,631  INFO [Timer-0] (com.founder.enp.util.ArticleUtil:45) - 新取到了稿件【1282】排行数:【4】所在栏目【149】
+2009-09-13 22:53:23,650  INFO [Timer-0] (com.founder.enp.util.ArticleUtil:45) - 新取到了稿件【1283】排行数:【5】所在栏目【149】
+2009-09-13 22:53:30,425  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【37】秒
+2009-09-13 22:53:57,197  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 22:54:15,490  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-13 22:54:18,031  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-13 22:54:42,414  INFO [main] (com.founder.enp.DataMoveMain:133) - 程序安全关闭
+2009-09-13 23:03:03,877  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 23:03:03,893  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-13 23:03:03,895  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 23:03:03,912  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-13 23:03:03,928  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-13 23:03:57,967 ERROR [Timer-0] (com.founder.enp.util.DBUtil:82) - 
+java.lang.NullPointerException
+	at com.founder.enp.util.DBUtil.getFirstObjStringFromList(DBUtil.java:80)
+	at com.founder.enp.util.DBUtil.getDoubleFromDatabase(DBUtil.java:110)
+	at com.founder.enp.util.ColumnUtil.createNode(ColumnUtil.java:80)
+	at com.founder.enp.util.ColumnUtil.syncTypeStruct(ColumnUtil.java:246)
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:54)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-13 23:04:39,719  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1284】排行数:【1】所在栏目【151】
+2009-09-13 23:04:50,402  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1285】排行数:【2】所在栏目【151】
+2009-09-13 23:05:02,312  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1286】排行数:【3】所在栏目【151】
+2009-09-13 23:05:02,325  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1287】排行数:【4】所在栏目【151】
+2009-09-13 23:05:02,345  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1288】排行数:【5】所在栏目【151】
+2009-09-13 23:05:02,345  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【118】秒
+2009-09-13 23:05:02,346  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 23:05:02,352  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 23:05:02,360  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-13 23:05:02,368  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-13 23:05:02,376  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-13 23:05:02,382  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-13 23:05:02,389  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-13 23:05:02,400  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1289】排行数:【6】所在栏目【149】
+2009-09-13 23:05:02,415  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1290】排行数:【7】所在栏目【149】
+2009-09-13 23:05:02,429  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1291】排行数:【8】所在栏目【149】
+2009-09-13 23:05:02,429  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-13 23:05:02,430  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-13 23:05:02,515  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1292】排行数:【1】所在栏目【152】
+2009-09-13 23:05:02,527  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1293】排行数:【2】所在栏目【152】
+2009-09-13 23:05:02,550  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1294】排行数:【3】所在栏目【152】
+2009-09-13 23:05:02,565  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1295】排行数:【4】所在栏目【152】
+2009-09-13 23:05:02,576  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1296】排行数:【5】所在栏目【152】
+2009-09-13 23:05:02,588  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1297】排行数:【6】所在栏目【152】
+2009-09-13 23:05:02,599  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1298】排行数:【7】所在栏目【152】
+2009-09-13 23:05:02,610  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1299】排行数:【8】所在栏目【152】
+2009-09-13 23:05:02,622  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1300】排行数:【9】所在栏目【152】
+2009-09-13 23:05:02,633  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:84) - 新取到了稿件【1301】排行数:【10】所在栏目【152】
+2009-09-13 23:05:02,633  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-13 23:06:02,346  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 23:06:02,352  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 23:06:02,360  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-13 23:06:02,367  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-13 23:06:02,376  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-13 23:06:02,384  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-13 23:06:02,391  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-13 23:06:02,398  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-13 23:06:02,405  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-13 23:06:02,412  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-13 23:06:02,412  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-13 23:06:02,430  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-13 23:06:02,446  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-13 23:06:02,454  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-13 23:06:02,462  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-13 23:06:02,469  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-13 23:06:02,479  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1296】排行数:【5】所在栏目【152】
+2009-09-13 23:06:02,487  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1297】排行数:【6】所在栏目【152】
+2009-09-13 23:06:02,500  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1298】排行数:【7】所在栏目【152】
+2009-09-13 23:06:02,510  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1299】排行数:【8】所在栏目【152】
+2009-09-13 23:06:02,518  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1300】排行数:【9】所在栏目【152】
+2009-09-13 23:06:02,526  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1301】排行数:【10】所在栏目【152】
+2009-09-13 23:06:02,527  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-13 23:07:02,346  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 23:07:02,357  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 23:07:02,365  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-13 23:07:02,374  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-13 23:07:02,382  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-13 23:07:02,390  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-13 23:07:02,398  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-13 23:07:02,405  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-13 23:07:02,413  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-13 23:07:02,428  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-13 23:07:02,428  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-13 23:07:02,430  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-13 23:07:02,449  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-13 23:07:02,457  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-13 23:07:02,467  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-13 23:07:02,475  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-13 23:07:02,485  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1296】排行数:【5】所在栏目【152】
+2009-09-13 23:07:02,496  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1297】排行数:【6】所在栏目【152】
+2009-09-13 23:07:02,504  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1298】排行数:【7】所在栏目【152】
+2009-09-13 23:07:02,514  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1299】排行数:【8】所在栏目【152】
+2009-09-13 23:07:02,523  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1300】排行数:【9】所在栏目【152】
+2009-09-13 23:07:02,533  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1301】排行数:【10】所在栏目【152】
+2009-09-13 23:07:02,533  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-13 23:08:02,346  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 23:08:02,352  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 23:08:02,360  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-13 23:08:02,367  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-13 23:08:02,375  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-13 23:08:02,384  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-13 23:08:02,395  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-13 23:08:02,406  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-13 23:08:02,413  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-13 23:08:02,420  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-13 23:08:02,420  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-13 23:08:02,430  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-13 23:08:02,446  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-13 23:08:02,454  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-13 23:08:02,464  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-13 23:08:02,471  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-13 23:08:02,480  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1296】排行数:【5】所在栏目【152】
+2009-09-13 23:08:02,490  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1297】排行数:【6】所在栏目【152】
+2009-09-13 23:08:02,498  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1298】排行数:【7】所在栏目【152】
+2009-09-13 23:08:02,510  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1299】排行数:【8】所在栏目【152】
+2009-09-13 23:08:02,517  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1300】排行数:【9】所在栏目【152】
+2009-09-13 23:08:02,523  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1301】排行数:【10】所在栏目【152】
+2009-09-13 23:08:02,524  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-13 23:09:02,346  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-13 23:09:02,353  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-13 23:09:02,361  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-13 23:09:02,369  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-13 23:09:02,376  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-13 23:09:02,384  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-13 23:09:02,391  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-13 23:09:02,398  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-13 23:09:02,407  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-13 23:09:02,414  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-13 23:09:02,414  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-13 23:09:02,430  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-13 23:09:02,451  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-13 23:09:02,464  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-13 23:09:02,473  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-13 23:09:02,481  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-13 23:09:02,491  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1296】排行数:【5】所在栏目【152】
+2009-09-13 23:09:02,501  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1297】排行数:【6】所在栏目【152】
+2009-09-13 23:09:02,514  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1298】排行数:【7】所在栏目【152】
+2009-09-13 23:09:02,521  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1299】排行数:【8】所在栏目【152】
+2009-09-13 23:09:02,534  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1300】排行数:【9】所在栏目【152】
+2009-09-13 23:09:02,543  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1301】排行数:【10】所在栏目【152】
+2009-09-13 23:09:02,543  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-13 23:09:33,943  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 23:54:16,786  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-13 23:54:40,623  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-13 23:54:50,325  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 23:54:50,346 ERROR [main] (com.founder.enp.config.Init:41) - 载入配置有误，将退出程序。完善配置后再启动。
+java.lang.NullPointerException
+	at com.founder.enp.config.Init.getTextTrim(Init.java:94)
+	at com.founder.enp.config.Init.readParams(Init.java:88)
+	at com.founder.enp.config.Init.init(Init.java:38)
+	at com.founder.enp.DataMoveMain.main(DataMoveMain.java:35)
+2009-09-13 23:55:12,681  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 23:58:48,252  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-13 23:58:49,896 ERROR [main] (com.founder.enp.config.Init:98) - 取【isDelElse】 参数出错
+2009-09-13 23:59:01,220 ERROR [main] (com.founder.enp.config.Init:98) - 取【isDelElse】 参数出错
+2009-09-13 23:59:51,857  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 00:00:42,436  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 00:00:50,078  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-14 00:00:50,081  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 00:00:50,114  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 00:00:50,140  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 00:00:50,808  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1284】排行数:【1】所在栏目【151】
+2009-09-14 00:00:50,817  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1285】排行数:【2】所在栏目【151】
+2009-09-14 00:00:50,830  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1286】排行数:【3】所在栏目【151】
+2009-09-14 00:00:50,840  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1287】排行数:【4】所在栏目【151】
+2009-09-14 00:00:50,852  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1288】排行数:【5】所在栏目【151】
+2009-09-14 00:00:50,852  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-14 00:00:50,852  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 00:00:50,858  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-14 00:00:50,867  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 00:00:50,875  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 00:00:50,884  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 00:00:50,892  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 00:00:50,900  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 00:00:50,908  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 00:00:50,916  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 00:00:50,924  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 00:00:50,925  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-14 00:00:50,925  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 00:00:50,949  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 00:00:50,957  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 00:00:50,967  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 00:00:50,975  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 00:00:50,985  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1296】排行数:【5】所在栏目【152】
+2009-09-14 00:00:50,998  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1297】排行数:【6】所在栏目【152】
+2009-09-14 00:00:51,008  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1298】排行数:【7】所在栏目【152】
+2009-09-14 00:00:51,016  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1299】排行数:【8】所在栏目【152】
+2009-09-14 00:00:51,024  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1300】排行数:【9】所在栏目【152】
+2009-09-14 00:00:51,035  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1301】排行数:【10】所在栏目【152】
+2009-09-14 00:00:51,043  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-14 00:01:20,925  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 00:01:20,952  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 00:01:20,962  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 00:01:20,972  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 00:01:20,982  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 00:01:21,000  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1296】排行数:【5】所在栏目【152】
+2009-09-14 00:01:21,010  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1297】排行数:【6】所在栏目【152】
+2009-09-14 00:01:21,020  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1298】排行数:【7】所在栏目【152】
+2009-09-14 00:01:21,030  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1299】排行数:【8】所在栏目【152】
+2009-09-14 00:01:21,040  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1300】排行数:【9】所在栏目【152】
+2009-09-14 00:01:21,069  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1301】排行数:【10】所在栏目【152】
+2009-09-14 00:01:40,085  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 00:01:58,744  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【37】秒
+2009-09-14 00:02:18,673  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 00:02:18,679  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 00:02:20,205  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 00:03:23,042  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 00:03:23,060  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-14 00:03:23,061  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 00:03:23,081  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 00:03:23,095  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 00:03:23,723  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1284】排行数:【1】所在栏目【151】
+2009-09-14 00:03:23,732  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1285】排行数:【2】所在栏目【151】
+2009-09-14 00:03:23,745  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1286】排行数:【3】所在栏目【151】
+2009-09-14 00:03:23,757  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1287】排行数:【4】所在栏目【151】
+2009-09-14 00:03:23,771  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1288】排行数:【5】所在栏目【151】
+2009-09-14 00:03:31,410  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【8】秒
+2009-09-14 00:03:31,411  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 00:03:31,421  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-14 00:03:31,435  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 00:03:31,444  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 00:03:31,455  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 00:03:31,464  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 00:03:31,472  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 00:03:31,483  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 00:03:31,492  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 00:03:31,500  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 00:03:33,576  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【2】秒
+2009-09-14 00:03:33,577  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 00:03:33,607  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 00:03:33,618  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 00:03:33,629  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 00:03:33,642  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 00:04:06,261 ERROR [Timer-0] (com.founder.enp.dest.DestCMS4:99) - 删除多余稿件发生异常
+java.lang.ClassCastException: java.math.BigDecimal
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:93)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-14 00:04:13,183  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【39】秒
+2009-09-14 00:04:13,184  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 00:04:13,213  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 00:04:13,223  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 00:04:13,237  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 00:04:13,259  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 00:04:15,666 ERROR [Timer-0] (com.founder.enp.dest.DestCMS4:99) - 删除多余稿件发生异常
+java.lang.ClassCastException: java.math.BigDecimal
+	at com.founder.enp.dest.DestCMS4.save(DestCMS4.java:93)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:61)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-14 00:04:15,667  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【2】秒
+2009-09-14 00:04:28,071  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 00:04:33,181  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 00:04:33,182  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 00:04:33,183  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 00:05:34,439  INFO [main] (com.founder.enp.config.Init:52) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 00:05:34,456  INFO [main] (com.founder.enp.config.Init:39) - 已载入配置，初始化程序成功
+2009-09-14 00:05:34,457  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 00:05:34,477  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 00:05:34,495  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 00:05:35,029  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1284】排行数:【1】所在栏目【151】
+2009-09-14 00:05:35,040  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1285】排行数:【2】所在栏目【151】
+2009-09-14 00:05:35,055  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1286】排行数:【3】所在栏目【151】
+2009-09-14 00:05:35,065  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1287】排行数:【4】所在栏目【151】
+2009-09-14 00:05:35,078  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1288】排行数:【5】所在栏目【151】
+2009-09-14 00:05:35,078  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-14 00:05:35,078  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 00:05:35,084  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-14 00:05:35,099  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 00:05:35,114  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 00:05:35,127  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 00:05:35,137  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 00:05:35,153  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 00:05:35,163  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 00:05:35,170  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 00:05:35,177  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 00:05:35,177  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-14 00:05:35,178  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 00:05:35,197  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 00:05:35,206  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 00:05:35,215  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 00:05:35,224  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 00:05:35,246  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:94) - 删除多余稿件【1296】排行数:【5】所在栏目【152】
+2009-09-14 00:05:35,253  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:94) - 删除多余稿件【1297】排行数:【6】所在栏目【152】
+2009-09-14 00:05:35,260  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:94) - 删除多余稿件【1298】排行数:【7】所在栏目【152】
+2009-09-14 00:05:35,267  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:94) - 删除多余稿件【1299】排行数:【8】所在栏目【152】
+2009-09-14 00:05:35,274  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:94) - 删除多余稿件【1300】排行数:【9】所在栏目【152】
+2009-09-14 00:05:35,281  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:94) - 删除多余稿件【1301】排行数:【10】所在栏目【152】
+2009-09-14 00:05:35,281  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-14 00:05:59,457  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 00:05:59,460  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 00:05:59,460  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 00:05:59,461  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 21:26:12,891  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:26:12,944  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:26:12,945  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 21:26:12,966  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 21:26:13,047  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 21:26:34,576 ERROR [Timer-0] (com.founder.enp.db.ConnectionManager:29) - 取得数据库连接异常
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at com.founder.enp.db.DBConnectionPool.getConnection(DBConnectionPool.java:123)
+	at com.founder.enp.db.ConnectionManager.getConnection(ConnectionManager.java:27)
+	at com.founder.enp.util.DBUtil.getConnection(DBUtil.java:41)
+	at com.founder.enp.source.SourceDB.open(SourceDB.java:54)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:44)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 9 more
+2009-09-14 21:26:34,592 ERROR [Timer-0] (com.founder.enp.source.SourceDB:37) - 
+java.lang.NullPointerException
+	at org.apache.commons.dbutils.QueryRunner.prepareStatement(QueryRunner.java:314)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:391)
+	at com.founder.enp.util.DBUtil.getQueryList(DBUtil.java:69)
+	at com.founder.enp.util.DBUtil.getQueryList(DBUtil.java:65)
+	at com.founder.enp.source.SourceDB.getData(SourceDB.java:35)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:45)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-14 21:26:34,593 ERROR [Timer-0] (com.founder.enp.proess.ChunkProcess:54) - 从源取得数据错误,数据:【null】
+2009-09-14 21:26:34,593  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【21】秒
+2009-09-14 21:27:43,097  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:27:43,107  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:27:43,108  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 21:27:43,121  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 21:27:43,135  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 21:27:46,801  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:50) - 指定的destnodeid 不存在于是翔宇系统中，将使用destNode
+2009-09-14 21:27:46,957  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 21:27:46,984  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 21:27:46,998  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 21:27:47,031  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 21:27:47,045  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 21:27:47,062  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 21:27:47,079  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 21:27:47,097  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:76) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 21:27:47,097  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【3】秒
+2009-09-14 21:28:23,152  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 21:28:23,156  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 21:28:23,156  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 21:28:23,157  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 21:31:43,522  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:31:43,535  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:31:43,537  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 21:31:43,550  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 21:31:43,567  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 21:31:44,341  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 21:31:44,357  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 21:31:44,379  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 21:31:44,698  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 21:31:44,715  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 21:31:44,731  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 21:31:44,747  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 21:31:44,780  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 21:31:44,780  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【1】秒
+2009-09-14 21:32:03,539  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 21:32:03,543  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 21:32:03,543  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 21:32:03,544  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 21:42:36,972  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:42:36,993  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:42:36,995  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 21:42:37,007  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 21:42:37,064  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 21:42:40,697  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 21:42:40,712  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 21:42:40,729  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 21:42:40,741  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 21:42:40,764  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 21:42:40,778  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 21:42:40,793  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 21:42:40,806  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 21:42:51,367  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【14】秒
+2009-09-14 21:42:51,368  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 21:42:51,675  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 21:42:51,692  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 21:42:51,704  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 21:42:51,718  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 21:42:51,750  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-14 21:42:51,751  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 21:46:35,781  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:46:35,799  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:46:35,816  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 21:47:56,200  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:47:56,214  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:47:56,219  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 21:49:06,810  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:49:06,830  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:49:06,836  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 21:52:55,178  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:52:55,200  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:52:55,206  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 21:58:54,240  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 21:58:54,257  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 21:58:54,262  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:05:11,011  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:05:11,032  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:05:11,040  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:15:08,469  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:15:08,484  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:15:08,490  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:18:13,840  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:18:13,861  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:18:13,869  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:20:21,966 ERROR [Timer-0] (com.founder.enp.proess.ChunkProcess:47) - 
+java.lang.NullPointerException
+	at com.founder.enp.source.SourceWebService.open(SourceWebService.java:130)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:44)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-14 22:21:01,622  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:21:01,650  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:21:01,657  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:21:05,005 ERROR [Timer-0] (com.founder.enp.source.SourceWebService:76) - 
+java.io.IOException: Server returned HTTP response code: 400 for URL: http://58.68.134.67/MarketService/qlStockServiceAll.asmx
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1170)
+	at com.founder.enp.source.SourceWebService.writeStream(SourceWebService.java:145)
+	at com.founder.enp.source.SourceWebService.getData(SourceWebService.java:72)
+	at com.founder.enp.proess.ChunkProcess.proess(ChunkProcess.java:45)
+	at com.founder.enp.proess.ChunkProcess.run(ChunkProcess.java:33)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-09-14 22:21:05,008 ERROR [Timer-0] (com.founder.enp.proess.ChunkProcess:54) - 从源取得数据错误,数据:【null】
+2009-09-14 22:21:05,009  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据数据，花费【3】秒
+2009-09-14 22:22:08,974  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:22:08,991  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:22:08,999  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:23:49,008  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:23:49,039  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:23:49,053  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:24:27,874  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:24:27,893  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:24:27,900  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:25:18,104  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:25:18,123  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:25:18,128  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:38:27,180  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:38:27,194  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:38:27,196  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:40:52,327  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 22:40:52,469  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 22:42:05,029  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:85) - 新取到了稿件【1320】排行数:【1】所在栏目【160】
+2009-09-14 22:42:07,257  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:85) - 新取到了稿件【1321】排行数:【2】所在栏目【160】
+2009-09-14 22:42:07,290  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:85) - 新取到了稿件【1322】排行数:【3】所在栏目【160】
+2009-09-14 22:42:07,320  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:85) - 新取到了稿件【1323】排行数:【4】所在栏目【160】
+2009-09-14 22:42:07,343  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:85) - 新取到了稿件【1324】排行数:【5】所在栏目【160】
+2009-09-14 22:42:07,348  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据数据，花费【220】秒
+2009-09-14 22:44:51,734  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:44:51,746  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:44:51,747  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:44:52,007  INFO [Timer-0] (com.founder.enp.source.SourceWebService:83) - 通过webservice【沪深涨跌幅排行－沪A股涨排行(webservice)】获取数据成功,获取到【5】条数据
+2009-09-14 22:44:52,022  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 22:44:52,039  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 22:44:52,780  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1320】排行数:【1】所在栏目【160】
+2009-09-14 22:44:52,796  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1321】排行数:【2】所在栏目【160】
+2009-09-14 22:44:52,811  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1322】排行数:【3】所在栏目【160】
+2009-09-14 22:44:52,826  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1323】排行数:【4】所在栏目【160】
+2009-09-14 22:44:52,943  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1324】排行数:【5】所在栏目【160】
+2009-09-14 22:44:52,949  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据数据，花费【1】秒
+2009-09-14 22:45:21,770  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 22:45:23,773  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 22:45:23,774  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 22:45:23,774  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 22:45:56,514  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:45:56,535  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:45:56,541  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:50:52,431  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 22:50:52,450  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 22:50:52,451  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 22:51:11,175  INFO [Timer-0] (com.founder.enp.source.SourceWebService:83) - 通过webservice【沪深涨跌幅排行－沪A股涨排行(webservice)】获取数据成功,获取到【5】条数据
+2009-09-14 22:51:11,201  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 22:51:11,241  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 22:51:11,940  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1320】排行数:【1】所在栏目【160】
+2009-09-14 22:51:11,957  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1321】排行数:【2】所在栏目【160】
+2009-09-14 22:51:11,971  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1322】排行数:【3】所在栏目【160】
+2009-09-14 22:51:11,986  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1323】排行数:【4】所在栏目【160】
+2009-09-14 22:51:12,018  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1324】排行数:【5】所在栏目【160】
+2009-09-14 22:51:12,026  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据数据，花费【19】秒
+2009-09-14 22:51:57,462  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 22:51:57,467  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 22:51:57,468  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 22:51:57,469  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 23:02:35,896  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 23:02:35,943 ERROR [main] (com.founder.enp.config.Init:114) - 取【action】 参数出错
+2009-09-14 23:02:35,944 ERROR [main] (com.founder.enp.config.Init:114) - 取【xmlfile】 参数出错
+2009-09-14 23:02:35,947 ERROR [main] (com.founder.enp.config.Init:114) - 取【param】 参数出错
+2009-09-14 23:02:35,948 ERROR [main] (com.founder.enp.config.Init:114) - 取【returnNodename】 参数出错
+2009-09-14 23:02:35,949 ERROR [main] (com.founder.enp.config.Init:114) - 取【action】 参数出错
+2009-09-14 23:02:35,950 ERROR [main] (com.founder.enp.config.Init:114) - 取【xmlfile】 参数出错
+2009-09-14 23:02:35,950 ERROR [main] (com.founder.enp.config.Init:114) - 取【param】 参数出错
+2009-09-14 23:02:35,951 ERROR [main] (com.founder.enp.config.Init:114) - 取【returnNodename】 参数出错
+2009-09-14 23:02:35,959  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 23:02:35,961  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 23:02:35,979  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 23:02:35,998  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 23:02:36,740  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 23:02:36,754  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 23:02:36,771  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 23:02:36,791  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 23:02:36,808  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 23:02:36,830  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 23:02:36,853  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 23:02:36,871  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 23:02:36,871  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-14 23:02:36,872  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 23:02:36,945  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 23:02:36,968  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 23:02:36,983  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 23:02:37,000  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 23:02:37,006  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-14 23:02:37,006  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 23:02:46,219  INFO [Timer-0] (com.founder.enp.source.SourceWebService:83) - 通过webservice【沪深涨跌幅排行－沪A股涨排行(webservice)】获取数据成功,获取到【5】条数据
+2009-09-14 23:02:46,259  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1320】排行数:【1】所在栏目【160】
+2009-09-14 23:02:46,282  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1321】排行数:【2】所在栏目【160】
+2009-09-14 23:02:46,295  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1322】排行数:【3】所在栏目【160】
+2009-09-14 23:02:46,309  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1323】排行数:【4】所在栏目【160】
+2009-09-14 23:02:46,328  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1324】排行数:【5】所在栏目【160】
+2009-09-14 23:02:46,334  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据数据，花费【9】秒
+2009-09-14 23:05:10,986  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 23:05:11,603  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 23:05:11,604  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 23:05:11,604  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭
+2009-09-14 23:06:39,419  INFO [main] (com.founder.enp.config.Init:54) - configFile : F:/work/workspace/GetNewest/src/config.xml
+2009-09-14 23:06:39,431  INFO [main] (com.founder.enp.config.Init:41) - 已载入配置，初始化程序成功
+2009-09-14 23:06:39,434  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行一览】的最新数据
+2009-09-14 23:06:39,448  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:49) - 创建新数据库池,id=3
+2009-09-14 23:06:39,467  INFO [Timer-0] (com.founder.enp.db.DBConnectionPool:95) - 启动连接池：3
+2009-09-14 23:06:40,044  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1279】排行数:【1】所在栏目【149】
+2009-09-14 23:06:40,063  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1280】排行数:【2】所在栏目【149】
+2009-09-14 23:06:40,083  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1281】排行数:【3】所在栏目【149】
+2009-09-14 23:06:40,097  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1282】排行数:【4】所在栏目【149】
+2009-09-14 23:06:40,111  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1283】排行数:【5】所在栏目【149】
+2009-09-14 23:06:40,129  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1289】排行数:【6】所在栏目【149】
+2009-09-14 23:06:40,145  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1290】排行数:【7】所在栏目【149】
+2009-09-14 23:06:40,159  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1291】排行数:【8】所在栏目【149】
+2009-09-14 23:06:40,159  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行一览】的最新数据数据，花费【0】秒
+2009-09-14 23:06:40,159  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【股票-新股发行儿览】的最新数据
+2009-09-14 23:06:40,189  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1292】排行数:【1】所在栏目【152】
+2009-09-14 23:06:40,205  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1293】排行数:【2】所在栏目【152】
+2009-09-14 23:06:40,220  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1294】排行数:【3】所在栏目【152】
+2009-09-14 23:06:40,238  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1295】排行数:【4】所在栏目【152】
+2009-09-14 23:06:40,244  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【股票-新股发行儿览】的最新数据数据，花费【0】秒
+2009-09-14 23:06:40,244  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:32) - 开始获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据
+2009-09-14 23:06:40,408  INFO [Timer-0] (com.founder.enp.source.SourceWebService:83) - 通过webservice【沪深涨跌幅排行－沪A股涨排行(webservice)】获取数据成功,获取到【5】条数据
+2009-09-14 23:06:40,436  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1320】排行数:【1】所在栏目【160】
+2009-09-14 23:06:40,449  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1321】排行数:【2】所在栏目【160】
+2009-09-14 23:06:40,463  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1322】排行数:【3】所在栏目【160】
+2009-09-14 23:06:40,476  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1323】排行数:【4】所在栏目【160】
+2009-09-14 23:06:40,491  INFO [Timer-0] (com.founder.enp.dest.DestCMS4:77) - 更新已有稿件【1324】排行数:【5】所在栏目【160】
+2009-09-14 23:06:40,496  INFO [Timer-0] (com.founder.enp.proess.ChunkProcess:35) - 获取【沪深涨跌幅排行－沪A股涨排行(webservice)】的最新数据数据，花费【0】秒
+2009-09-14 23:07:04,434  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-14 23:07:05,056  INFO [main] (com.founder.enp.db.DBConnectionPool:72) - 关闭连接池：3
+2009-09-14 23:07:05,056  INFO [main] (com.founder.enp.db.ConnectionPoolManager:52) - 移除连接池:3
+2009-09-14 23:07:05,057  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭

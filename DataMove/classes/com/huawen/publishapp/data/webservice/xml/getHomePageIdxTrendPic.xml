@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <getHomePageIdxTrendPic xmlns="http://tempuri.org/">
+      <StockCode>${StockCode}$</StockCode>
+      <Market>${Market}$</Market>
+      <Width>${Width}$</Width>
+      <Height>${Height}$</Height>
+    </getHomePageIdxTrendPic>
+  </soap:Body>
+</soap:Envelope>

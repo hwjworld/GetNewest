@@ -1,0 +1,3 @@
+2009-09-15 00:31:01,858  INFO [main] (com.founder.enp.DataMoveMain:84) - 已发送结束程序消息
+2009-09-15 00:31:53,404  INFO [main] (com.founder.enp.DataMoveMain:103) - 检测到停止程序消息
+2009-09-15 00:31:55,411  INFO [main] (com.founder.enp.DataMoveMain:138) - 程序安全关闭

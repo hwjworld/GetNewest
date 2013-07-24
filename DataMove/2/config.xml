@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<packages>
+	<package>
+		<!-- mssql,source -->
+		<id>1</id>
+		<type>db</type>
+		<driver>net.sourceforge.jtds.jdbc.Driver</driver>
+		<url>jdbc:jtds:sqlserver://129.0.10.137:1433/JYDB</url>
+		<username>test</username>
+		<password>test123</password>
+	</package>
+	<package>
+		<!-- mysql,source -->
+		<id>2</id>
+		<type>db</type>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://122.224.137.205:3306/bx</url>
+		<username>sa</username>
+		<password>sa</password>
+	</package>
+	<package>
+		<!-- oracle,dest -->
+		<id>3</id>
+		<type>db</type>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@172.18.0.5:1521:cms40</url>
+		<username>cmsuser</username>
+		<password>xyz</password>
+	</package>
+	<package>
+		<!-- QL_WIN_URL,source -->
+		<id>4</id>
+		<type>webservice</type>
+		<url>http://58.68.134.67/MarketService/qlStockServiceAll.asmx</url>
+	</package>
+	<package>
+		<id>5</id>
+		<type>webservice</type>
+		<!-- QL_LIN_URL,source -->
+		<url>http://10.39.10.162/MarketService/qlStockServiceAll.asmx</url>
+	</package>
+	<package>
+		<id>6</id>
+		<type>webservice</type>
+		<!-- url为空，则调用CommonDataForWS.getQLPath()方法自动判断 -->
+		<url></url>
+	</package>
+</packages>
+<chunk>
+	<chunkmark>股票-新股发行一览</chunkmark>
+	<source>3</source>
+	<dest>3</dest>
+	<!-- 源的调用代码 -->
+	<sourcecode><![CDATA[select nodeid,nodename,attr,parentid from typestruct where rownum<9]]></sourcecode>
+	<!-- 各字段的分隔符 -->
+	<separator>|</separator>
+	<!-- 取源的字段数,例如5取sql执行后的前5个字段 -->
+	<site>2</site>
+	<!-- 翔宇栏目,二取一,id为主 -->
+	<destnode></destnode>
+	<destnodeid>149</destnodeid>
+	<!-- 翔宇稿件表字段 -->
+	<destfield>abstract</destfield>
+	<!-- 间隔取的时间(秒) -->
+	<interval>1111</interval>
+	<!-- 是否删除取得记录数以外其他的稿件 -->
+	<isDelElse>0</isDelElse>
+</chunk>
+<chunk>
+	<chunkmark>股票-新股发行儿览</chunkmark>
+	<source>3</source>
+	<dest>3</dest>
+	<!-- 源的调用代码  -->
+	<sourcecode><![CDATA[select articleid,title,publishstate from releaselib where rownum<5]]></sourcecode>
+	<!-- 各字段的分隔符 -->
+	<separator>|</separator>
+	<!-- 取源的字段数,例如5取sql执行后的前5个字段 -->
+	<site>2</site>
+	<!-- 翔宇栏目,二取一,id为主 -->
+	<destnode>test1~新股发行儿览</destnode>
+	<destnodeid></destnodeid>
+	<!-- 翔宇稿件表字段 -->
+	<destfield>abstract</destfield>
+	<!-- 间隔取的时间(秒) -->
+	<interval>555</interval>
+	<!-- 是否删除取得记录数以外其他的稿件 -->
+	<isDelElse>1</isDelElse>
+</chunk>
+
+<chunk>
+	<chunkmark>沪深涨跌幅排行－沪A股涨排行(webservice)</chunkmark>
+	<source>6</source>
+	<dest>3</dest>
+	<!-- 源的调用代码,webservice为空,采用后面的参数  -->
+	<sourcecode><![CDATA[]]></sourcecode>
+	<!-- 各字段的分隔符 -->
+	<separator>|</separator>
+	<!-- 取源的字段数,例如5取sql执行后的前5个字段 -->
+	<site>2</site>
+	<!-- 翔宇栏目,二取一,id为主 -->
+	<destnode>test1~沪A股涨排行(webservice)</destnode>
+	<destnodeid></destnodeid>
+	<!-- 翔宇稿件表字段 -->
+	<destfield>abstract</destfield>
+	<!-- 间隔取的时间(秒) -->
+	<interval>666</interval>
+	<!-- 是否删除取得记录数以外其他的稿件 -->
+	<isDelElse>1</isDelElse>
+	
+	<!-- webservice仅有 -->
+	<action>getMultiGroupRptExOnePage</action>
+	<!-- 发送给action的数据xml文件 -->
+	<xmlfile>getMultiGroupRptExOnePage.xml</xmlfile>
+	<!-- 填充本地xml的参数 -->
+	<param>"0,1",0,5,"9|1|6|11|10","11",false</param>
+	<returnNodename>getMultiGroupRptExOnePageResult</returnNodename>
+	<!-- webservice仅有结束 -->
+	
+</chunk>
+</config>

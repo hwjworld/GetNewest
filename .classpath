@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="DataMove/lib/enputil.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-dbutils-1.2.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-io-1.4.jar" sourcepath="F:/software/java/plugins/commons-io-1.4-src.zip"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-pool-1.5.2.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/jtds-1.2.1.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/msbase.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/mssqlserver.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/msutil.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="DataMove/lib/commons-lang-2.4.jar" sourcepath="F:/software/java/plugins/commons-lang-2.4-src.zip"/>
+	<classpathentry kind="output" path="DataMove/classes"/>
+</classpath>
